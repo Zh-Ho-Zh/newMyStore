@@ -1,0 +1,58 @@
+{
+  "id": "2303105",
+  "name": "stroe",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "791889",
+      "name": "商品",
+      "font_class": "goods-copy",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "852293",
+      "name": "订单",
+      "font_class": "dingdan2",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "2129918",
+      "name": "数据统计",
+      "font_class": "shujutongji",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "11177997",
+      "name": "用户",
+      "font_class": "ziyuan",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "13173805",
+      "name": "权限",
+      "font_class": "quanxian",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "487023",
+      "name": "人",
+      "font_class": "ren",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "493531",
+      "name": "锁定",
+      "font_class": "suoding",
+      "unicode": "e7af",
+      "unicode_decimal": 59311
+    }
+  ]
+}

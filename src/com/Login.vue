@@ -53,15 +53,14 @@ export default {
     login() {
       this.$refs.loginForm.validate(async (valid) => {
         if (valid) {
-          this.$http.post('/login', this.loginForm).then((res) => {
-            if (res.data.meta.status !== 200) {
-              return this.$message.error('账号或密码不正确')
-            } else {
-              window.sessionStorage.setItem('token', res.data.data.token)
-              this.$message.success('登录成功')
-              this.$router.push('./Index')
-            }
-          })
+          const { data: res } = await this.$http.post('/login', this.loginForm)
+          if (res.meta.status !== 200) {
+            return this.$message.error('账号或密码不正确')
+          } else {
+            window.sessionStorage.setItem('token', res.data.token)
+            this.$message.success('登录成功')
+            this.$router.push('./Index')
+          }
         } else {
           this.$message.error('账号或者密码格式不正确，请按要求输入')
         }

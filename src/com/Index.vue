@@ -11,7 +11,7 @@
           class="el-menu-vertical-demo"
           background-color="#333744"
           text-color="#fff"
-          active-text-color="#ffd04b"
+          active-text-color="#00FFFF"
           menu-trigger="click"
           :unique-opened="true"
           :router="true"
@@ -37,7 +37,9 @@
           </el-submenu>
         </el-menu>
       </el-aside>
-      <el-main>Main</el-main>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
     </el-container>
   </el-container>
 </template>
@@ -97,8 +99,11 @@ export default {
   text-align: center;
   cursor: pointer;
 }
-.exit {
+.index .exit {
   float: right;
   margin-top: 10px;
+}
+.index .el-menu {
+  border: 0;
 }
 </style>
